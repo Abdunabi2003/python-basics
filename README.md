@@ -3,4 +3,4 @@
 This repository contains my Python learning examples.
 
 ## Topics
-- Variables
+- Variables (basic input/output, geometric formulas)
