@@ -17,6 +17,9 @@ I am learning Python step by step and uploading solved problems to GitHub.
   - Traffic speed violation check  
   - User login validation  
 
+- Operators  
+  - arithmetic, comparison, logical
+
 ## Purpose
 
 This repository is created for learning purposes and to track my progress in Python programming.
