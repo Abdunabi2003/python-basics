@@ -10,7 +10,18 @@ I am learning Python step by step and uploading solved problems to GitHub.
   - Simple calculations  
   - Geometric formulas  
 
-- Conditional Statements (if / elif / else)  
+- Data Types  
+  - int, float, string  
+  - list, tuple, dictionary, set  
+  - boolean and None  
+
+- Type Conversion  
+  - int to float  
+  - float to int  
+  - string to number  
+  - basic type casting examples  
+
+- Conditions (if / elif / else)  
   - Student score evaluation  
   - Loan approval logic  
   - Discount calculation  
@@ -18,8 +29,11 @@ I am learning Python step by step and uploading solved problems to GitHub.
   - User login validation  
 
 - Operators  
-  - arithmetic, comparison, logical
+  - Arithmetic operators  
+  - Comparison operators  
+  - Logical operators  
 
 ## Purpose
 
-This repository is created for learning purposes and to track my progress in Python programming.
+This repository is created for learning purposes
+and to track my progress in Python programming.
