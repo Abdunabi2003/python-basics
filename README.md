@@ -33,6 +33,12 @@ I am learning Python step by step and uploading solved problems to GitHub.
   - Comparison operators  
   - Logical operators  
 
+- Loops  
+  - for loop  
+  - while loop  
+  - break and continue  
+  - practical loop problems  
+
 ## Purpose
 
 This repository is created for learning purposes
