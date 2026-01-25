@@ -95,3 +95,38 @@ if total > 1000000:
     print("Discount applied:", final_price)
 else:
     print("Total price:", total)
+
+# -----------------------------------
+# Problem 6:
+# A system stores user IDs in a list.
+# Some IDs may be duplicated.
+# Create a new list that contains only unique IDs
+# while keeping the original order.
+# -----------------------------------
+
+# -----------------------------------
+# Problem 7:
+# Given a list of numbers,
+# find and print the second largest number.
+# Do not use built-in sorting functions.
+# -----------------------------------
+
+# -----------------------------------
+# Problem 8:
+# A shop stores daily sales amounts in a list.
+# Calculate the total sales.
+# Then calculate and print the average sale value.
+# -----------------------------------
+
+# -----------------------------------
+# Problem 9:
+# Given a list of integers,
+# check whether the list is sorted in ascending order.
+# Print True if it is sorted, otherwise print False.
+# -----------------------------------
+
+# -----------------------------------
+# Problem 10:
+# Given a list of numbers,
+# reverse the list without using reverse() or slicing.
+# -----------------------------------
