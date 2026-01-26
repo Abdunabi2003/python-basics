@@ -104,12 +104,37 @@ else:
 # while keeping the original order.
 # -----------------------------------
 
+user_ids = [101, 203, 101, 405, 203, 507,507]
+new_user_ids = []
+for i in user_ids:
+    if i not in new_user_ids:
+        new_user_ids.append(i)
+print(new_user_ids)
+
 # -----------------------------------
 # Problem 7:
 # Given a list of numbers,
 # find and print the second largest number.
 # Do not use built-in sorting functions.
 # -----------------------------------
+
+numbers = [50, 3, 0, 30, 40, 11, 70, 60, 70, 60, 1, 9, 5, 10, -5, 15, 20]
+
+max_number = numbers[0]
+
+# Find the maximum number
+for num in numbers:
+    if num > max_number:
+        max_number = num
+
+# Find the second maximum
+second_max = None
+for num in numbers:
+    if num != max_number:
+        if second_max is None or num > second_max:
+            second_max = num
+
+print("Second largest number:", second_max)
 
 # -----------------------------------
 # Problem 8:
@@ -118,6 +143,16 @@ else:
 # Then calculate and print the average sale value.
 # -----------------------------------
 
+sales = [120, 150, 100, 130, 170]
+s = 0
+
+for i in range(len(sales)):
+    s += sales[i]
+
+if len(sales) > 0:
+    print(s / len(sales))
+
+
 # -----------------------------------
 # Problem 9:
 # Given a list of integers,
@@ -125,8 +160,28 @@ else:
 # Print True if it is sorted, otherwise print False.
 # -----------------------------------
 
+t_numbers = [-6, 1, 2, 3, 4, 5]
+
+is_sorted = True
+
+for i in range(len(t_numbers) - 1):
+    if t_numbers[i] > t_numbers[i + 1]:
+        is_sorted = False
+        break
+
+print(is_sorted)
+
+
 # -----------------------------------
 # Problem 10:
 # Given a list of numbers,
 # reverse the list without using reverse() or slicing.
 # -----------------------------------
+numbers = [1, 2, 3, 4, 5]
+
+reversed_list = []
+
+for i in range(len(numbers) - 1, -1, -1):
+    reversed_list.append(numbers[i])
+
+print(reversed_list)
