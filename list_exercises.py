@@ -122,12 +122,11 @@ numbers = [50, 3, 0, 30, 40, 11, 70, 60, 70, 60, 1, 9, 5, 10, -5, 15, 20]
 
 max_number = numbers[0]
 
-# Find the maximum number
+
 for num in numbers:
     if num > max_number:
         max_number = num
 
-# Find the second maximum
 second_max = None
 for num in numbers:
     if num != max_number:
