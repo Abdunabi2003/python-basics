@@ -116,3 +116,128 @@ else:
 
 print(tuple(between))
 
+# -----------------------------------
+# Problem 7: Tuple Equality (Without Sets)
+# Check whether two tuples contain the
+# same elements with the same frequencies,
+# regardless of order.
+# -----------------------------------
+
+tuple1 = (1, 2, 2, 3, 1, 1, 1)
+tuple2 = (2, 1, 3, 2, 1, 1, 3)
+
+is_equal = True
+
+if len(tuple1) != len(tuple2):
+    is_equal = False
+else:
+    for i in tuple1:
+        if tuple1.count(i) != tuple2.count(i):
+            is_equal = False
+            break
+
+print(is_equal)
+
+
+
+# -----------------------------------
+# Problem 8: Longest String
+# Find the longest string in a tuple.
+# If multiple strings have the same
+# maximum length, return the last one.
+# -----------------------------------
+
+t = ("car", "home", "tree", "book")
+
+longest = ""
+
+for word in t:
+    if len(longest) <= len(word):
+        longest = word
+
+print(longest)
+
+
+# -----------------------------------
+# Problem 9: Nested Tuple Unpacking
+# Unpack values from a nested tuple
+# and calculate the average score.
+# -----------------------------------
+
+person, scores = ("Ali", (90, 85, 88))
+average = sum(scores) / len(scores)
+print(f"Name: {person}, Average score: {average}")
+
+
+# -----------------------------------
+# Problem 10: Candidate Filtering
+# Filter candidates based on age
+# and years of experience.
+# -----------------------------------
+
+candidates = (
+    ("Ali", 22, 3),
+    ("Vali", 20, 5),
+    ("Sami", 25, 1),
+    ("Zara", 23, 4)
+)
+
+qualified_candidates = []
+
+for name, age, experience in candidates:
+    if age > 21 and experience >= 2:
+        qualified_candidates.append(name)
+
+print(tuple(qualified_candidates))
+
+
+# Problem 11
+# Determine whether a sequence is increasing,
+# decreasing, or mixed.
+
+t = (1, 3, 2, 4)
+
+increasing = True
+decreasing = True
+
+for i in range(len(t) - 1):
+    if t[i] >= t[i + 1]:
+        increasing = False
+    if t[i] <= t[i + 1]:
+        decreasing = False
+
+if increasing:
+    print("strictly increasing")
+elif decreasing:
+    print("strictly decreasing")
+else:
+    print("mixed")
+
+
+
+# -----------------------------------
+# Problem 12: Maximum Sum of Consecutive Elements
+# Given a tuple of numbers, find the
+# three consecutive elements with the
+# maximum total sum.
+# -----------------------------------
+
+t = (1, 4, 2, 5, 6, 1, 7)
+
+max_sum = sum(t[0:3])
+max_triplet = t[0:3]
+
+for i in range(1, len(t)-2):
+    current = t[i:i+3]
+    current_sum = sum(current)
+
+    if current_sum > max_sum:
+        max_sum = current_sum
+        max_triplet = current
+
+print(max_triplet)
+print("Max sum:", max_sum)
+
+
+
+
