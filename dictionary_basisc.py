@@ -113,3 +113,94 @@ for key in d:
         most_frequent_value = value
 
 print(most_frequent_value)
+
+
+# Problem 6: Filter by Value Range
+# Keep students with scores between 70 and 90 (inclusive).
+
+students = {
+    "Ali": 85,
+    "Fali": 90,
+    "Varvara": 60,
+    "Vali": 70,
+    "Zara": 50,
+}
+
+filtered_students = {}
+
+for name, score in students.items():
+    if 70 <= score <= 90:
+        filtered_students[name] = score
+
+print(filtered_students)
+
+# Problem 7: Swap Keys and Values (Handle Duplicates)
+# Group keys by their values.
+
+numbers = {"a": 1, "b": 2, "c": 1, "d": 2, "e": 3, "f": 4}
+
+grouped = {}
+
+for key, value in numbers.items():
+    if value not in grouped:
+        grouped[value] = []
+    grouped[value].append(key)
+
+print(grouped)
+
+# Problem 8: Top Scorer
+# Find the student with the highest score.
+# If multiple students have the same highest score,
+# return the first one encountered.
+
+students = {
+    "Ali": 85,
+    "Fali": 90,
+    "Varvara": 60,
+    "Vali": 70,
+    "Zara": 90,
+}
+
+max_score = None
+top_student = None
+
+for name, score in students.items():
+    if max_score is None or score > max_score:
+        max_score = score
+        top_student = name
+
+print(top_student, max_score)
+
+# Problem 9: Merge and Sum Values
+# Merge two dictionaries. If a key exists in both,
+# sum their values.
+
+dict1 = {"a": 2, "b": 3}
+dict2 = {"b": 5, "c": 1}
+
+result = {}
+
+for key, value in dict1.items():
+    result[key] = value
+
+for key, value in dict2.items():
+    if key in result:
+        result[key] += value
+    else:
+        result[key] = value
+
+print(result)
+
+# Problem 10: Remove Zero Values
+# Create a new dictionary without keys that have value 0.
+
+data = {"a": 3, "b": 0, "c": 5, "d": 0}
+
+filtered_data = {}
+
+for key, value in data.items():
+    if value != 0:
+        filtered_data[key] = value
+
+print(filtered_data)
+
