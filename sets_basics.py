@@ -79,3 +79,82 @@ for item in items:
 print(unique_items)
 print("Unique count:", len(unique_items))
 
+# -----------------------------------
+# Problem 1: Unique Visitors (Union)
+# Combine visitors from two different days
+# and keep only unique user names.
+# -----------------------------------
+
+day_one_visitors = {"Ali", "Vali", "Zara"}
+day_two_visitors = {"Zara", "Sami", "Ali"}
+
+all_unique_visitors = day_one_visitors.union(day_two_visitors)
+# alternative way:
+# all_unique_visitors = day_one_visitors | day_two_visitors
+
+print(all_unique_visitors)
+
+
+# -----------------------------------
+# Problem 2: Common Customers (Intersection)
+# Find users who visited both days.
+# -----------------------------------
+
+day_one_visitors = {"Ali", "Vali", "Zara"}
+day_two_visitors = {"Zara", "Sami", "Ali"}
+
+common_visitors = day_one_visitors.intersection(day_two_visitors)
+# alternative way:
+# common_visitors = day_one_visitors & day_two_visitors
+
+print(common_visitors)
+
+# -----------------------------------
+# Problem 3: New Signups (Difference)
+# Find users who signed up this period
+# but were not present in the previous one.
+# -----------------------------------
+
+last_month_users = {"Ali", "Vali", "Zara"}
+this_month_users = {"Ali", "Zara", "Sami", "Kamila"}
+
+new_users = this_month_users.difference(last_month_users)
+# alternative way:
+# new_users = this_month_users - last_month_users
+
+print(new_users)
+
+# -----------------------------------
+# Problem 4: Username Check (Membership)
+# Check if a username already exists
+# in the registered users set.
+# -----------------------------------
+
+registered_usernames = {"ali123", "zara_dev", "sami99"}
+
+username_to_check = "ali123"
+
+exists = username_to_check in registered_usernames
+print(exists)
+
+# -----------------------------------
+# Problem 5: Warehouse Product Comparison
+# Remove duplicates from product lists
+# and find:
+# - all unique products (union)
+# - common products (intersection)
+# -----------------------------------
+
+warehouse_one = [101, 102, 103, 101, 104]
+warehouse_two = [103, 105, 102, 102]
+
+unique_warehouse_one = set(warehouse_one)
+unique_warehouse_two = set(warehouse_two)
+
+all_unique_products = unique_warehouse_one.union(unique_warehouse_two)
+common_products = unique_warehouse_one.intersection(unique_warehouse_two)
+
+print("Warehouse 1 unique:", unique_warehouse_one)
+print("Warehouse 2 unique:", unique_warehouse_two)
+print("All unique products:", all_unique_products)
+print("Common products:", common_products)
